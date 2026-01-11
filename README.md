@@ -29,3 +29,9 @@ This repository contains my progress, codes, notes, and experiments from my deep
 | **10** | **NLP Deep Dive** | ⏳ | - |
 | ... | ... | ... | ... |
 
+## Acknowledgements
+This learning journey is based on the resources provided by fast.ai.
+* **Book:** [Deep Learning for Coders with fastai and PyTorch](https://course.fast.ai/)
+* **Official Repository:** [fastai/fastbook](https://github.com/fastai/fastbook)
+* **Authors:** Jeremy Howard & Sylvain Gugger
+

@@ -46,7 +46,7 @@ A mathematical function that mimics the human brain. It uses **weights** that ar
 * **Epoch:** One complete pass through all the images in the dataset.
 
 <div align="center">
-  <img src="images/overfitting_example.png" width="400" alt="Overfitting Graph">
+  <img src="https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Images/Screenshot%202026-01-11%20151250.png" width="400" alt="Overfitting Graph">
 </div>
 
 ### Transfer Learning
@@ -66,12 +66,12 @@ learn.fine_tune(1)
 ---
 # Recap
 <div align="center">
-  <img src="images/overfitting_example.png" width="400" alt="Overfitting Graph">
+  <img src="https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Images/Screenshot%202026-01-11%20165328.png" width="500" alt="Recap">
 </div>
 
 
 # Validation Sets & Test Sets
-The problem with traditional validation set is the `Data Leakage` hapens when we train the model more than once and update the hyperparameter until we find the best validation score.
+The problem with validation set is the `Data Leakage` hapens when we train the model more than once and update the hyperparameter until we find the best validation score.
 - Round 1: You try a "Learning Rate" of 0.1. Validation accuracy is 80%.
 
 - Round 2: You try a "Learning Rate" of 0.01. Validation accuracy is 82%.

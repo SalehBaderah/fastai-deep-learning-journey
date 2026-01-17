@@ -27,7 +27,7 @@ The **Drivetrain Approach** is a strategic framework for building data products 
 The basic idea is to start with considering your objective, then think about what actions you can take to meet that objective and what data you have (or can acquire) that can help, and then build a model that you can use to determine the best actions to take to get the best results in terms of your objective
 
 <div align="center">
-  <img src="https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Images/Screenshot%202026-01-11%20151250.png" width="400" alt="Drivetrain">
+  <img src="https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Images/Screenshot%202026-01-15%20150659.png" width="800" alt="Drivetrain">
 </div>
 
 ### The 4 Steps of the Drivetrain Approach
@@ -77,7 +77,9 @@ bears = bears.new(item_tfms=RandomResizedCrop(128, min_scale=0.3))
 dls = bears.dataloaders(path)
 dls.train.show_batch(max_n=4, nrows=1, unique=True)
 ```
-![image.png](attachment:22b08be0-86b4-4f0a-a8a9-24f5a918f7ff.png)
+<div align="center">
+  <img src="https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Images/Screenshot%202026-01-16%20224331.png" width="800" alt="Drivetrain">
+</div>
 
 ### Data Augmentation
 Artificially expands a dataset by creating modified copies of existing data.
@@ -95,7 +97,10 @@ dls = bears.dataloaders(path)
 dls.train.show_batch(max_n=8, nrows=2, unique=True)
 ```
 
-![image.png](attachment:22b08be0-86b4-4f0a-a8a9-24f5a918f7ff.png)
+<div align="center">
+  <img src="https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Images/Screenshot%202026-01-16%20224902.png" width="800" alt="Drivetrain">
+</div>
+
 
 # Training the model
 After we prepare the data we create a learner and fine-tune it.
@@ -115,14 +120,17 @@ To understand where the model is making mistakes
 interp = ClassificationInterpretation.from_learner(learn)
 interp.plot_confusion_matrix()
 ```
-![image.png](attachment:e4424628-8481-4aff-bf7a-d739811eb70f.png)
+<div align="center">
+  <img src="https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Images/Screenshot%202026-01-16%20230228.png" width="500" alt="Drivetrain">
+</div>
+
 
 - **Rows**:Represent the Actual labels (the true types of bears in our dataset).
 - **Columns**:Represent the Predicted labels (what the model thought the images were)
 - **Diagonal**:Shows images classified correctly
 - **Off-diagonal**:Shows images classified incorrectly
 
-This helps us pinpoint exactly where errors are occurring. We can determine if it is:
+This helps us point exactly where errors are occurring. We can determine if it is:
 1.   A Dataset Problem: e.g., images that aren't bears at all, or are labeled incorrectly.
 2.   A Model Problem: e.g., the model fails on images with unusual lighting or weird angles
 
@@ -137,8 +145,9 @@ We use `plot_top_losses` to see the images with the highest loss. Each image is 
 ```python 
 interp.plot_top_losses(5, nrows=1)
 ```
-![image.png](attachment:6ada6f69-4b28-48aa-a481-b89640439342.png)
-
+<div align="center">
+  <img src="https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Images/Screenshot%202026-01-16%20231652.png" width="800" alt="Drivetrain">
+</div>
 # Turning Your Model into an Online Application
 ---
 ### Using the Model for Inference
@@ -200,7 +209,13 @@ If we train a model using a dataset downloaded from the `Bing Image Search API`,
 ## Mitigation Strategies
 Out-of-domain data and domain shift are examples of the larger problem that we can never fully anticipate every behavior of a neural network. However, we can mitigate these risks using a carefully **thought-out process** for deployment:
 
-![image.png](attachment:88e32a42-980d-4b16-b6ed-d4a2bcc0aa62.png)
+
+<div align="center">
+  <img src="https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Images/Screenshot%202026-01-17%20173206.png" width="500" alt="Drivetrain">
+</div>
+
+
+
 
 **Manual Process (Human in the loop)**
     Run the deep learning model in parallel with human operators. Do not use the model to drive actions directly yet. Instead, have humans check the model's output to verify whether it makes sense.

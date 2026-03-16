@@ -18,7 +18,7 @@ This repository contains my progress, codes, notes, and experiments from my deep
 | Chapter | Topic | Status | Notebook / Notes |
 | :---: | :--- | :---: | :--- |
 | **1** | **Your Deep Learning Journey**|✅| [Link](https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Chapter_1/README.md) |
-| **2** | **From Model to Production**  | ⏳ | - |
+| **2** | **From Model to Production**  | ✅ | [Link](https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Chapter_2/README.md) |
 | **3** | **Data Ethics**  | ⏳ | - |
 | **4** | **Under the Hood: Training a Digit Classifier**  | ⏳ | - |
 | **5** | **Image Classification** | ⏳ | - |

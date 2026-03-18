@@ -20,7 +20,7 @@ This repository contains my progress, codes, notes, and experiments from my deep
 | **1** | **Your Deep Learning Journey**|✅| [Link](https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Chapter_1/README.md) |
 | **2** | **From Model to Production**  | ✅ | [Link](https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Chapter_2/README.md) |
 | **3** | **Data Ethics**  | ✅ | [Link](https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Chapter_3/README.md) |
-| **4** | **Under the Hood: Training a Digit Classifier**  | ⏳ | - |
+| **4** | **Under the Hood: Training a Digit Classifier**  | ✅ | [Link](https://github.com/SalehBaderah/fastai-deep-learning-journey/blob/main/Chapter_4/Chapter4.ipynb) |
 | **5** | **Image Classification** | ⏳ | - |
 | **6** | **Other Computer Vision Problems** | ⏳ | - |
 | **7** | **Training a State-of-the-Art Model** | ⏳ | - |
@@ -33,5 +33,6 @@ This repository contains my progress, codes, notes, and experiments from my deep
 This learning journey is based on the resources provided by fast.ai.
 * **Book:** [Deep Learning for Coders with fastai and PyTorch](https://course.fast.ai/)
 * **Official Repository:** [fastai/fastbook](https://github.com/fastai/fastbook)
+* [Practical Deep Learning for coders](https://course.fast.ai/Resources/book.html)
 * **Authors:** Jeremy Howard & Sylvain Gugger
 
